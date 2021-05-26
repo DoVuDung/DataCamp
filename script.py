@@ -1,5 +1,6 @@
 # Import numpy
 import numpy as np
+import matplotlib.pyplot as plt
 # height and weight are available as a regular lists
 weight_lb = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 height_in = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -14,3 +15,6 @@ print(np_weight_lb[2])
 
 # Print out sub-array of np_height_in: index 100 up to and including index 110
 print(np_height_in[1:9])
+
+plt.scatter(weight_lb,height_in)
+plt.show()
